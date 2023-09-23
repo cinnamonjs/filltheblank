@@ -9,7 +9,16 @@ module.exports = {
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundSize: {
+        'size-200': '200% 200%',
+        'size-150': '150% 150%',
+      },
+      backgroundPosition: {
+        'pos-0': '0% 0%',
+        'pos-100': '100% 100%',
+      },
+    },
   },
   darkMode: "class",
   plugins: [nextui()],
